@@ -3,14 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rinterio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/7ec61196bd.js" crossorigin="anonymous"></script>
+    <!-- color name making -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-clr': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+       .manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+    </style>
+      
     
 </head>
-<body>
+<body class="manrope ">
     <!-- header section  -->
-    <header>
+    <header class="container mx-auto ">
+      <nav> 
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"><span class="-rotate-45 bg-btn-clr px-3 py-2 rounded-full "><i class="fa-solid fa-arrow-right"></i></span> Rinterio </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-gray-400">
+                  
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+              
+            </div>
+            
+            <div class="navbar-end">
+
+                <div class="navbar-center "><i class=" ml-5 fa-solid fa-magnifying-glass"></i>
+                    <i class=" mx-5 fa-solid fa-cart-shopping"></i>
+                </div>
+
+              <a class="btn bg-btn-clr font-bold rounded-3xl ">Book Consult <span class="-rotate-45 bg-black text-white px-2 py-1 rounded-full "><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+          </div>
+      </nav>
+
+
+      <!-- header section -->
+       <section class="container mx-auto ">
+        <div class="">
+            <img class="mx-auto justify-center" src="assets/banner.png" alt="Banner Photo">
+
+
+            <h1 class="font-bold text-5xl text-center mx-auto w-3/5 my-5 ">A barn house of this design has a <br> striking appearance</h1>
+
+            <p class="text-gray-400 text-center justify-center mx-auto w-1/2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div class="mx-auto text-center my-5"><a class="btn bg-btn-clr font-bold rounded-3xl ">View details <span class="-rotate-45 bg-black text-white px-2 py-1 rounded-full "><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+            
+
+        </div>
+
+       </section>
 
     </header>
     
